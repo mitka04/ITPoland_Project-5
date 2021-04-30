@@ -123,15 +123,17 @@ namespace ITPoland_Project_5
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::ITPoland_Project_5.Properties.Resources.imageNotAvailable;
             this.pictureBox1.Location = new System.Drawing.Point(710, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(388, 355);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(827, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 36);
