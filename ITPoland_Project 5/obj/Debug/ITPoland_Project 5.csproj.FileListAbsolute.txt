@@ -9,3 +9,14 @@ C:\Users\user\Desktop\project03\ITPoland_Project 5\ITPoland_Project 5\obj\Debug\
 C:\Users\user\Desktop\project03\ITPoland_Project 5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\project03\ITPoland_Project 5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.exe
 C:\Users\user\Desktop\project03\ITPoland_Project 5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.pdb
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\bin\Debug\ITPoland_Project 5.exe.config
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\bin\Debug\ITPoland_Project 5.exe
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\bin\Debug\ITPoland_Project 5.pdb
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.csprojAssemblyReference.cache
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project_5.Form1.resources
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project_5.Form2.resources
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project_5.Properties.Resources.resources
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.csproj.GenerateResource.cache
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.csproj.CoreCompileInputs.cache
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.exe
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.pdb

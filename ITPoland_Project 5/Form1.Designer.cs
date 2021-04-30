@@ -40,18 +40,20 @@ namespace ITPoland_Project_5
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(116, 27);
+            this.label1.Location = new System.Drawing.Point(155, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 31);
+            this.label1.Size = new System.Drawing.Size(316, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Real State Agency";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(162, 209);
+            this.button4.Location = new System.Drawing.Point(216, 257);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(192, 33);
+            this.button4.Size = new System.Drawing.Size(256, 41);
             this.button4.TabIndex = 4;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@ namespace ITPoland_Project_5
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchButton.Location = new System.Drawing.Point(162, 159);
+            this.searchButton.Location = new System.Drawing.Point(216, 196);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(192, 33);
+            this.searchButton.Size = new System.Drawing.Size(256, 41);
             this.searchButton.TabIndex = 5;
             this.searchButton.Text = "Search Properties";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -70,35 +73,39 @@ namespace ITPoland_Project_5
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(12, 88);
+            this.addButton.Location = new System.Drawing.Point(16, 108);
+            this.addButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(192, 33);
+            this.addButton.Size = new System.Drawing.Size(256, 41);
             this.addButton.TabIndex = 6;
             this.addButton.Text = "Add Property";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // showButton
             // 
             this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.showButton.Location = new System.Drawing.Point(289, 88);
+            this.showButton.Location = new System.Drawing.Point(385, 108);
+            this.showButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(192, 33);
+            this.showButton.Size = new System.Drawing.Size(256, 41);
             this.showButton.TabIndex = 7;
             this.showButton.Text = "Show All Properties";
             this.showButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(493, 280);
+            this.ClientSize = new System.Drawing.Size(657, 345);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

@@ -21,5 +21,12 @@ namespace ITPoland_Project_5
         {
             Application.Exit();
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.ShowDialog();
+        }
     }
 }
