@@ -8,36 +8,37 @@ namespace ITPoland_Project_5
 {
     class Property
     {
-        int size;
-        int floor;
-        int age;
-        string address;
-        int rooms;
-        int bathrooms;
-        int price;
-        Boolean checkBox1;
-        Boolean checkBox2;
-        Boolean checkBox3;
-        Boolean checkBox4;
-        Boolean checkBox5;
-        Boolean checkBox6;
-        Boolean checkBox7;
-        Boolean checkBox8;
-        Boolean checkBox9;
-        Boolean checkBox10;
-        Boolean checkBox11;
-        Boolean checkBox12;
-        string name;
-        string surname;
-        int dateOfBirth;
-        string addressOwner;
-        long phoneNumber;
-        string email;
+        public int size;
+        public int floor;
+        public int age;
+        public string address;
+        public int rooms;
+        public int bathrooms;
+        public int price;
+        public Boolean checkBox1;
+        public Boolean checkBox2;
+        public Boolean checkBox3;
+        public Boolean checkBox4;
+        public Boolean checkBox5;
+        public Boolean checkBox6;
+        public Boolean checkBox7;
+        public Boolean checkBox8;
+        public Boolean checkBox9;
+        public Boolean checkBox10;
+        public Boolean checkBox11;
+        public Boolean checkBox12;
+        public string name;
+        public string surname;
+        public int dateOfBirth;
+        public string addressOwner;
+        public long phoneNumber;
+        public string email;
+        public string pathImage;
 
         public Property(int size, int floor, int age, string address, int rooms, int bathrooms, int price, Boolean checkBox1,
             Boolean checkBox2, Boolean checkBox3, Boolean checkBox4, Boolean checkBox5, Boolean checkBox6, Boolean checkBox7,
             Boolean checkBox8, Boolean checkBox9, Boolean checkBox10, Boolean checkBox11, Boolean checkBox12, string name,
-            string surname, int dateOfBirth, string addressOwner, long phoneNumber, string email)
+            string surname, int dateOfBirth, string addressOwner, long phoneNumber, string email, string pathImage)
         {
             this.size = size;
             this.floor = floor;
@@ -64,6 +65,7 @@ namespace ITPoland_Project_5
             this.addressOwner = addressOwner;
             this.phoneNumber = phoneNumber;
             this.email = email;
+            this.pathImage = pathImage;
         }
     }
 }

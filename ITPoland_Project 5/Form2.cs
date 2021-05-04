@@ -158,7 +158,7 @@ namespace ITPoland_Project_5
                 }
                 ListProperties.properties.Add(new Property(size, floor, age, address, rooms, bathrooms, price, optionCheckBox1, optionCheckBox2,
                     optionCheckBox3, optionCheckBox4, optionCheckBox5, optionCheckBox6, optionCheckBox7, optionCheckBox8, optionCheckBox9,
-                    optionCheckBox10, optionCheckBox11, optionCheckBox12, name, surname, dateOfBirth, addressOwner, phoneNumber, email));
+                    optionCheckBox10, optionCheckBox11, optionCheckBox12, name, surname, dateOfBirth, addressOwner, phoneNumber, email, path));
 
                 FileStream fs = new FileStream("data.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
@@ -218,6 +218,7 @@ namespace ITPoland_Project_5
                 textBox11.Text = "";
                 textBox12.Text = "";
                 textBox13.Text = "";
+                pictureBox1.Image = Properties.Resources.imageNotAvailable;
             }
             else
             {

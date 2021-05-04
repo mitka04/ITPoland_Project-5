@@ -20,3 +20,4 @@ C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Pr
 C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.csproj.CoreCompileInputs.cache
 C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.exe
 C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project 5.pdb
+C:\Users\somon\OneDrive\Документы\GitHub\ITPoland_Project-5\ITPoland_Project 5\obj\Debug\ITPoland_Project_5.Form3.resources

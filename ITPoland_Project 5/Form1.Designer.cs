@@ -51,7 +51,7 @@ namespace ITPoland_Project_5
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(216, 257);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(256, 41);
             this.button4.TabIndex = 4;
@@ -63,7 +63,7 @@ namespace ITPoland_Project_5
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.searchButton.Location = new System.Drawing.Point(216, 196);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(256, 41);
             this.searchButton.TabIndex = 5;
@@ -74,7 +74,7 @@ namespace ITPoland_Project_5
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.addButton.Location = new System.Drawing.Point(16, 108);
-            this.addButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addButton.Margin = new System.Windows.Forms.Padding(4);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(256, 41);
             this.addButton.TabIndex = 6;
@@ -86,12 +86,13 @@ namespace ITPoland_Project_5
             // 
             this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.showButton.Location = new System.Drawing.Point(385, 108);
-            this.showButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showButton.Margin = new System.Windows.Forms.Padding(4);
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(256, 41);
             this.showButton.TabIndex = 7;
             this.showButton.Text = "Show All Properties";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // Form1
             // 
@@ -105,7 +106,7 @@ namespace ITPoland_Project_5
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
