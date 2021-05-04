@@ -60,14 +60,14 @@ namespace ITPoland_Project_5
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -140,6 +140,7 @@ namespace ITPoland_Project_5
             this.button1.TabIndex = 28;
             this.button1.Text = "Add New Photo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox9
             // 
@@ -405,14 +406,14 @@ namespace ITPoland_Project_5
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
@@ -426,19 +427,19 @@ namespace ITPoland_Project_5
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Owner";
             // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(892, 112);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(151, 22);
-            this.textBox12.TabIndex = 18;
-            // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(892, 60);
+            this.textBox13.Location = new System.Drawing.Point(892, 112);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(151, 22);
-            this.textBox13.TabIndex = 17;
+            this.textBox13.TabIndex = 18;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(892, 60);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(151, 22);
+            this.textBox12.TabIndex = 17;
             // 
             // label13
             // 
@@ -467,12 +468,12 @@ namespace ITPoland_Project_5
             this.textBox11.Size = new System.Drawing.Size(458, 22);
             this.textBox11.TabIndex = 14;
             // 
-            // textBox8
+            // textBox10
             // 
-            this.textBox8.Location = new System.Drawing.Point(191, 168);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(151, 22);
-            this.textBox8.TabIndex = 13;
+            this.textBox10.Location = new System.Drawing.Point(191, 168);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(151, 22);
+            this.textBox10.TabIndex = 13;
             // 
             // textBox9
             // 
@@ -481,12 +482,12 @@ namespace ITPoland_Project_5
             this.textBox9.Size = new System.Drawing.Size(151, 22);
             this.textBox9.TabIndex = 12;
             // 
-            // textBox10
+            // textBox8
             // 
-            this.textBox10.Location = new System.Drawing.Point(191, 60);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(151, 22);
-            this.textBox10.TabIndex = 11;
+            this.textBox8.Location = new System.Drawing.Point(191, 60);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(151, 22);
+            this.textBox8.TabIndex = 11;
             // 
             // label9
             // 
@@ -538,6 +539,7 @@ namespace ITPoland_Project_5
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // cancelButton
             // 
@@ -549,6 +551,7 @@ namespace ITPoland_Project_5
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // label15
             // 
@@ -625,14 +628,14 @@ namespace ITPoland_Project_5
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
