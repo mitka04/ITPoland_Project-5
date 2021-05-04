@@ -13,8 +13,8 @@ namespace ITPoland_Project_5
     public partial class Form3 : Form
     {
         public int numberOfData;
-        int currentContact = 1;
-        int currentContactFromList = 0;
+        int currentData = 1;
+        int currentDataFromList = 0;
         public Form3()
         {
             InitializeComponent();
@@ -44,95 +44,93 @@ namespace ITPoland_Project_5
 
         private void nextRecordButton_Click(object sender, EventArgs e)
         {
-            currentContact++;
-            currentContactFromList++;
-            currentContactLabel.Text = currentContact + "";
-            if (currentContact < numberOfData && currentContact > 1)
+            currentData++;
+            currentDataFromList++;
+            currentContactLabel.Text = currentData + "";
+            if (currentData < numberOfData && currentData > 1)
             {
                 nextRecordButton.Enabled = true;
                 previouseRecordButton.Enabled = true;
             }
-            else if (currentContact == numberOfData)
+            else if (currentData == numberOfData)
             {
                 nextRecordButton.Enabled = false;
                 previouseRecordButton.Enabled = true;
             }
 
             numberOfContactsLabel.Text = ListProperties.properties.Count() + "";
-            currentContactLabel.Text = 1 + "";
-            sizeLabel.Text = ListProperties.properties[currentContactFromList].size + "";
-            floorLabel.Text = ListProperties.properties[currentContactFromList].floor + "";
-            ageLabel.Text = ListProperties.properties[currentContactFromList].age + "";
-            addressLabel.Text = ListProperties.properties[currentContactFromList].address;
-            roomsLabel.Text = ListProperties.properties[currentContactFromList].rooms + "";
-            bathroomsLabel.Text = ListProperties.properties[currentContactFromList].bathrooms + "";
-            priceLabel.Text = ListProperties.properties[currentContactFromList].price + "";
-            checkBox1.Checked = ListProperties.properties[currentContactFromList].checkBox1;
-            checkBox2.Checked = ListProperties.properties[currentContactFromList].checkBox2;
-            checkBox3.Checked = ListProperties.properties[currentContactFromList].checkBox3;
-            checkBox4.Checked = ListProperties.properties[currentContactFromList].checkBox4;
-            checkBox5.Checked = ListProperties.properties[currentContactFromList].checkBox5;
-            checkBox6.Checked = ListProperties.properties[currentContactFromList].checkBox6;
-            checkBox7.Checked = ListProperties.properties[currentContactFromList].checkBox7;
-            checkBox8.Checked = ListProperties.properties[currentContactFromList].checkBox8;
-            checkBox9.Checked = ListProperties.properties[currentContactFromList].checkBox9;
-            checkBox10.Checked = ListProperties.properties[currentContactFromList].checkBox10;
-            checkBox11.Checked = ListProperties.properties[currentContactFromList].checkBox11;
-            checkBox12.Checked = ListProperties.properties[currentContactFromList].checkBox12;
-            nameLabel.Text = ListProperties.properties[currentContactFromList].name;
-            surnameLabel.Text = ListProperties.properties[currentContactFromList].surname;
-            dateOfBirthLabel.Text = ListProperties.properties[currentContactFromList].dateOfBirth + "";
-            addressOwnerLabel.Text = ListProperties.properties[currentContactFromList].addressOwner;
-            phoneNumberLabel.Text = ListProperties.properties[currentContactFromList].phoneNumber + "";
-            emailLabel.Text = ListProperties.properties[currentContactFromList].email;       
-            Bitmap image = new Bitmap(ListProperties.properties[currentContactFromList].pathImage);
+            sizeLabel.Text = ListProperties.properties[currentDataFromList].size + "";
+            floorLabel.Text = ListProperties.properties[currentDataFromList].floor + "";
+            ageLabel.Text = ListProperties.properties[currentDataFromList].age + "";
+            addressLabel.Text = ListProperties.properties[currentDataFromList].address;
+            roomsLabel.Text = ListProperties.properties[currentDataFromList].rooms + "";
+            bathroomsLabel.Text = ListProperties.properties[currentDataFromList].bathrooms + "";
+            priceLabel.Text = ListProperties.properties[currentDataFromList].price + "";
+            checkBox1.Checked = ListProperties.properties[currentDataFromList].checkBox1;
+            checkBox2.Checked = ListProperties.properties[currentDataFromList].checkBox2;
+            checkBox3.Checked = ListProperties.properties[currentDataFromList].checkBox3;
+            checkBox4.Checked = ListProperties.properties[currentDataFromList].checkBox4;
+            checkBox5.Checked = ListProperties.properties[currentDataFromList].checkBox5;
+            checkBox6.Checked = ListProperties.properties[currentDataFromList].checkBox6;
+            checkBox7.Checked = ListProperties.properties[currentDataFromList].checkBox7;
+            checkBox8.Checked = ListProperties.properties[currentDataFromList].checkBox8;
+            checkBox9.Checked = ListProperties.properties[currentDataFromList].checkBox9;
+            checkBox10.Checked = ListProperties.properties[currentDataFromList].checkBox10;
+            checkBox11.Checked = ListProperties.properties[currentDataFromList].checkBox11;
+            checkBox12.Checked = ListProperties.properties[currentDataFromList].checkBox12;
+            nameLabel.Text = ListProperties.properties[currentDataFromList].name;
+            surnameLabel.Text = ListProperties.properties[currentDataFromList].surname;
+            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth + "";
+            addressOwnerLabel.Text = ListProperties.properties[currentDataFromList].addressOwner;
+            phoneNumberLabel.Text = ListProperties.properties[currentDataFromList].phoneNumber + "";
+            emailLabel.Text = ListProperties.properties[currentDataFromList].email;       
+            Bitmap image = new Bitmap(ListProperties.properties[currentDataFromList].pathImage);
             pictureBox1.Image = image;
         }
 
         private void previouseRecordButton_Click(object sender, EventArgs e)
         {
-            currentContact--;
-            currentContactFromList--;
-            currentContactLabel.Text = currentContact + "";
-            if (currentContact < numberOfData && currentContact > 1)
+            currentData--;
+            currentDataFromList--;
+            currentContactLabel.Text = currentData + "";
+            if (currentData < numberOfData && currentData > 1)
             {
                 nextRecordButton.Enabled = true;
                 previouseRecordButton.Enabled = true;
             }
-            else if (currentContact == 1)
+            else if (currentData == 1)
             {
                 previouseRecordButton.Enabled = false;
                 nextRecordButton.Enabled = true;
             }
 
             numberOfContactsLabel.Text = ListProperties.properties.Count() + "";
-            currentContactLabel.Text = 1 + "";
-            sizeLabel.Text = ListProperties.properties[currentContactFromList].size + "";
-            floorLabel.Text = ListProperties.properties[currentContactFromList].floor + "";
-            ageLabel.Text = ListProperties.properties[currentContactFromList].age + "";
-            addressLabel.Text = ListProperties.properties[currentContactFromList].address;
-            roomsLabel.Text = ListProperties.properties[currentContactFromList].rooms + "";
-            bathroomsLabel.Text = ListProperties.properties[currentContactFromList].bathrooms + "";
-            priceLabel.Text = ListProperties.properties[currentContactFromList].price + "";
-            checkBox1.Checked = ListProperties.properties[currentContactFromList].checkBox1;
-            checkBox2.Checked = ListProperties.properties[currentContactFromList].checkBox2;
-            checkBox3.Checked = ListProperties.properties[currentContactFromList].checkBox3;
-            checkBox4.Checked = ListProperties.properties[currentContactFromList].checkBox4;
-            checkBox5.Checked = ListProperties.properties[currentContactFromList].checkBox5;
-            checkBox6.Checked = ListProperties.properties[currentContactFromList].checkBox6;
-            checkBox7.Checked = ListProperties.properties[currentContactFromList].checkBox7;
-            checkBox8.Checked = ListProperties.properties[currentContactFromList].checkBox8;
-            checkBox9.Checked = ListProperties.properties[currentContactFromList].checkBox9;
-            checkBox10.Checked = ListProperties.properties[currentContactFromList].checkBox10;
-            checkBox11.Checked = ListProperties.properties[currentContactFromList].checkBox11;
-            checkBox12.Checked = ListProperties.properties[currentContactFromList].checkBox12;
-            nameLabel.Text = ListProperties.properties[currentContactFromList].name;
-            surnameLabel.Text = ListProperties.properties[currentContactFromList].surname;
-            dateOfBirthLabel.Text = ListProperties.properties[currentContactFromList].dateOfBirth + "";
-            addressOwnerLabel.Text = ListProperties.properties[currentContactFromList].addressOwner;
-            phoneNumberLabel.Text = ListProperties.properties[currentContactFromList].phoneNumber + "";
-            emailLabel.Text = ListProperties.properties[currentContactFromList].email;
-            Bitmap image = new Bitmap(ListProperties.properties[currentContactFromList].pathImage);
+            sizeLabel.Text = ListProperties.properties[currentDataFromList].size + "";
+            floorLabel.Text = ListProperties.properties[currentDataFromList].floor + "";
+            ageLabel.Text = ListProperties.properties[currentDataFromList].age + "";
+            addressLabel.Text = ListProperties.properties[currentDataFromList].address;
+            roomsLabel.Text = ListProperties.properties[currentDataFromList].rooms + "";
+            bathroomsLabel.Text = ListProperties.properties[currentDataFromList].bathrooms + "";
+            priceLabel.Text = ListProperties.properties[currentDataFromList].price + "";
+            checkBox1.Checked = ListProperties.properties[currentDataFromList].checkBox1;
+            checkBox2.Checked = ListProperties.properties[currentDataFromList].checkBox2;
+            checkBox3.Checked = ListProperties.properties[currentDataFromList].checkBox3;
+            checkBox4.Checked = ListProperties.properties[currentDataFromList].checkBox4;
+            checkBox5.Checked = ListProperties.properties[currentDataFromList].checkBox5;
+            checkBox6.Checked = ListProperties.properties[currentDataFromList].checkBox6;
+            checkBox7.Checked = ListProperties.properties[currentDataFromList].checkBox7;
+            checkBox8.Checked = ListProperties.properties[currentDataFromList].checkBox8;
+            checkBox9.Checked = ListProperties.properties[currentDataFromList].checkBox9;
+            checkBox10.Checked = ListProperties.properties[currentDataFromList].checkBox10;
+            checkBox11.Checked = ListProperties.properties[currentDataFromList].checkBox11;
+            checkBox12.Checked = ListProperties.properties[currentDataFromList].checkBox12;
+            nameLabel.Text = ListProperties.properties[currentDataFromList].name;
+            surnameLabel.Text = ListProperties.properties[currentDataFromList].surname;
+            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth + "";
+            addressOwnerLabel.Text = ListProperties.properties[currentDataFromList].addressOwner;
+            phoneNumberLabel.Text = ListProperties.properties[currentDataFromList].phoneNumber + "";
+            emailLabel.Text = ListProperties.properties[currentDataFromList].email;
+            Bitmap image = new Bitmap(ListProperties.properties[currentDataFromList].pathImage);
             pictureBox1.Image = image;
         }
 
