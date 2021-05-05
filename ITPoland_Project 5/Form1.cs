@@ -113,5 +113,12 @@ namespace ITPoland_Project_5
                 form3.ShowDialog();
             }
         }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.ShowDialog();
+        }
     }
 }

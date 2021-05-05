@@ -31,7 +31,18 @@ namespace ITPoland_Project_5
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.bathroomsLabel = new System.Windows.Forms.Label();
+            this.roomsLabel = new System.Windows.Forms.Label();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.ageLabel = new System.Windows.Forms.Label();
+            this.floorLabel = new System.Windows.Forms.Label();
+            this.sizeLabel = new System.Windows.Forms.Label();
+            this.numberOfContactsLabel = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.currentContactLabel = new System.Windows.Forms.Label();
+            this.nextRecordButton = new System.Windows.Forms.Button();
+            this.previouseRecordButton = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
@@ -52,35 +63,24 @@ namespace ITPoland_Project_5
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.previouseRecordButton = new System.Windows.Forms.Button();
-            this.nextRecordButton = new System.Windows.Forms.Button();
-            this.currentContactLabel = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numberOfContactsLabel = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.phoneNumberLabel = new System.Windows.Forms.Label();
+            this.addressOwnerLabel = new System.Windows.Forms.Label();
+            this.dateOfBirthLabel = new System.Windows.Forms.Label();
+            this.surnameLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.sizeLabel = new System.Windows.Forms.Label();
-            this.floorLabel = new System.Windows.Forms.Label();
-            this.addressLabel = new System.Windows.Forms.Label();
-            this.ageLabel = new System.Windows.Forms.Label();
-            this.bathroomsLabel = new System.Windows.Forms.Label();
-            this.roomsLabel = new System.Windows.Forms.Label();
-            this.priceLabel = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.surnameLabel = new System.Windows.Forms.Label();
-            this.dateOfBirthLabel = new System.Windows.Forms.Label();
-            this.addressOwnerLabel = new System.Windows.Forms.Label();
-            this.phoneNumberLabel = new System.Windows.Forms.Label();
-            this.emailLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,7 +89,7 @@ namespace ITPoland_Project_5
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(355, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 39);
+            this.label1.Size = new System.Drawing.Size(280, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "List of Properties";
             // 
@@ -138,16 +138,121 @@ namespace ITPoland_Project_5
             this.groupBox1.Text = "Property";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // pictureBox1
+            // priceLabel
             // 
-            this.pictureBox1.Image = global::ITPoland_Project_5.Properties.Resources.imageNotAvailable;
-            this.pictureBox1.Location = new System.Drawing.Point(734, 123);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 355);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceLabel.Location = new System.Drawing.Point(574, 190);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(0, 20);
+            this.priceLabel.TabIndex = 42;
+            // 
+            // bathroomsLabel
+            // 
+            this.bathroomsLabel.AutoSize = true;
+            this.bathroomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bathroomsLabel.Location = new System.Drawing.Point(574, 154);
+            this.bathroomsLabel.Name = "bathroomsLabel";
+            this.bathroomsLabel.Size = new System.Drawing.Size(0, 20);
+            this.bathroomsLabel.TabIndex = 41;
+            // 
+            // roomsLabel
+            // 
+            this.roomsLabel.AutoSize = true;
+            this.roomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roomsLabel.Location = new System.Drawing.Point(574, 123);
+            this.roomsLabel.Name = "roomsLabel";
+            this.roomsLabel.Size = new System.Drawing.Size(0, 20);
+            this.roomsLabel.TabIndex = 40;
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addressLabel.Location = new System.Drawing.Point(206, 220);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(0, 20);
+            this.addressLabel.TabIndex = 39;
+            // 
+            // ageLabel
+            // 
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ageLabel.Location = new System.Drawing.Point(206, 189);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(0, 20);
+            this.ageLabel.TabIndex = 38;
+            // 
+            // floorLabel
+            // 
+            this.floorLabel.AutoSize = true;
+            this.floorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.floorLabel.Location = new System.Drawing.Point(206, 154);
+            this.floorLabel.Name = "floorLabel";
+            this.floorLabel.Size = new System.Drawing.Size(0, 20);
+            this.floorLabel.TabIndex = 37;
+            // 
+            // sizeLabel
+            // 
+            this.sizeLabel.AutoSize = true;
+            this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sizeLabel.Location = new System.Drawing.Point(206, 123);
+            this.sizeLabel.Name = "sizeLabel";
+            this.sizeLabel.Size = new System.Drawing.Size(0, 20);
+            this.sizeLabel.TabIndex = 36;
+            // 
+            // numberOfContactsLabel
+            // 
+            this.numberOfContactsLabel.AutoSize = true;
+            this.numberOfContactsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numberOfContactsLabel.Location = new System.Drawing.Point(559, 38);
+            this.numberOfContactsLabel.Name = "numberOfContactsLabel";
+            this.numberOfContactsLabel.Size = new System.Drawing.Size(27, 29);
+            this.numberOfContactsLabel.TabIndex = 35;
+            this.numberOfContactsLabel.Text = "0";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(479, 38);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 29);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "From";
+            // 
+            // currentContactLabel
+            // 
+            this.currentContactLabel.AutoSize = true;
+            this.currentContactLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.currentContactLabel.Location = new System.Drawing.Point(446, 38);
+            this.currentContactLabel.Name = "currentContactLabel";
+            this.currentContactLabel.Size = new System.Drawing.Size(27, 29);
+            this.currentContactLabel.TabIndex = 33;
+            this.currentContactLabel.Text = "0";
+            this.currentContactLabel.Click += new System.EventHandler(this.currentContactLabel_Click);
+            // 
+            // nextRecordButton
+            // 
+            this.nextRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nextRecordButton.Location = new System.Drawing.Point(982, 32);
+            this.nextRecordButton.Name = "nextRecordButton";
+            this.nextRecordButton.Size = new System.Drawing.Size(140, 42);
+            this.nextRecordButton.TabIndex = 32;
+            this.nextRecordButton.Text = "Next";
+            this.nextRecordButton.UseVisualStyleBackColor = true;
+            this.nextRecordButton.Click += new System.EventHandler(this.nextRecordButton_Click);
+            // 
+            // previouseRecordButton
+            // 
+            this.previouseRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.previouseRecordButton.Location = new System.Drawing.Point(12, 32);
+            this.previouseRecordButton.Name = "previouseRecordButton";
+            this.previouseRecordButton.Size = new System.Drawing.Size(140, 42);
+            this.previouseRecordButton.TabIndex = 30;
+            this.previouseRecordButton.Text = "Previouse";
+            this.previouseRecordButton.UseVisualStyleBackColor = true;
+            this.previouseRecordButton.Click += new System.EventHandler(this.previouseRecordButton_Click);
             // 
             // checkBox9
             // 
@@ -361,58 +466,6 @@ namespace ITPoland_Project_5
             this.label9.TabIndex = 1;
             this.label9.Text = "Size:";
             // 
-            // previouseRecordButton
-            // 
-            this.previouseRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.previouseRecordButton.Location = new System.Drawing.Point(12, 32);
-            this.previouseRecordButton.Name = "previouseRecordButton";
-            this.previouseRecordButton.Size = new System.Drawing.Size(140, 42);
-            this.previouseRecordButton.TabIndex = 30;
-            this.previouseRecordButton.Text = "Previouse";
-            this.previouseRecordButton.UseVisualStyleBackColor = true;
-            this.previouseRecordButton.Click += new System.EventHandler(this.previouseRecordButton_Click);
-            // 
-            // nextRecordButton
-            // 
-            this.nextRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nextRecordButton.Location = new System.Drawing.Point(982, 32);
-            this.nextRecordButton.Name = "nextRecordButton";
-            this.nextRecordButton.Size = new System.Drawing.Size(140, 42);
-            this.nextRecordButton.TabIndex = 32;
-            this.nextRecordButton.Text = "Next";
-            this.nextRecordButton.UseVisualStyleBackColor = true;
-            this.nextRecordButton.Click += new System.EventHandler(this.nextRecordButton_Click);
-            // 
-            // currentContactLabel
-            // 
-            this.currentContactLabel.AutoSize = true;
-            this.currentContactLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.currentContactLabel.Location = new System.Drawing.Point(446, 38);
-            this.currentContactLabel.Name = "currentContactLabel";
-            this.currentContactLabel.Size = new System.Drawing.Size(27, 29);
-            this.currentContactLabel.TabIndex = 33;
-            this.currentContactLabel.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(479, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 29);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "From";
-            // 
-            // numberOfContactsLabel
-            // 
-            this.numberOfContactsLabel.AutoSize = true;
-            this.numberOfContactsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numberOfContactsLabel.Location = new System.Drawing.Point(559, 38);
-            this.numberOfContactsLabel.Name = "numberOfContactsLabel";
-            this.numberOfContactsLabel.Size = new System.Drawing.Size(27, 29);
-            this.numberOfContactsLabel.TabIndex = 35;
-            this.numberOfContactsLabel.Text = "0";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.emailLabel);
@@ -435,6 +488,60 @@ namespace ITPoland_Project_5
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Owner";
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emailLabel.Location = new System.Drawing.Point(921, 112);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(0, 20);
+            this.emailLabel.TabIndex = 42;
+            // 
+            // phoneNumberLabel
+            // 
+            this.phoneNumberLabel.AutoSize = true;
+            this.phoneNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.phoneNumberLabel.Location = new System.Drawing.Point(921, 60);
+            this.phoneNumberLabel.Name = "phoneNumberLabel";
+            this.phoneNumberLabel.Size = new System.Drawing.Size(0, 20);
+            this.phoneNumberLabel.TabIndex = 41;
+            // 
+            // addressOwnerLabel
+            // 
+            this.addressOwnerLabel.AutoSize = true;
+            this.addressOwnerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addressOwnerLabel.Location = new System.Drawing.Point(237, 211);
+            this.addressOwnerLabel.Name = "addressOwnerLabel";
+            this.addressOwnerLabel.Size = new System.Drawing.Size(0, 20);
+            this.addressOwnerLabel.TabIndex = 40;
+            // 
+            // dateOfBirthLabel
+            // 
+            this.dateOfBirthLabel.AutoSize = true;
+            this.dateOfBirthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateOfBirthLabel.Location = new System.Drawing.Point(237, 168);
+            this.dateOfBirthLabel.Name = "dateOfBirthLabel";
+            this.dateOfBirthLabel.Size = new System.Drawing.Size(0, 20);
+            this.dateOfBirthLabel.TabIndex = 39;
+            // 
+            // surnameLabel
+            // 
+            this.surnameLabel.AutoSize = true;
+            this.surnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.surnameLabel.Location = new System.Drawing.Point(237, 112);
+            this.surnameLabel.Name = "surnameLabel";
+            this.surnameLabel.Size = new System.Drawing.Size(0, 20);
+            this.surnameLabel.TabIndex = 38;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameLabel.Location = new System.Drawing.Point(237, 60);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(0, 20);
+            this.nameLabel.TabIndex = 37;
             // 
             // label13
             // 
@@ -496,123 +603,6 @@ namespace ITPoland_Project_5
             this.label18.TabIndex = 5;
             this.label18.Text = "Name";
             // 
-            // sizeLabel
-            // 
-            this.sizeLabel.AutoSize = true;
-            this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sizeLabel.Location = new System.Drawing.Point(206, 123);
-            this.sizeLabel.Name = "sizeLabel";
-            this.sizeLabel.Size = new System.Drawing.Size(0, 20);
-            this.sizeLabel.TabIndex = 36;
-            // 
-            // floorLabel
-            // 
-            this.floorLabel.AutoSize = true;
-            this.floorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.floorLabel.Location = new System.Drawing.Point(206, 154);
-            this.floorLabel.Name = "floorLabel";
-            this.floorLabel.Size = new System.Drawing.Size(0, 20);
-            this.floorLabel.TabIndex = 37;
-            // 
-            // addressLabel
-            // 
-            this.addressLabel.AutoSize = true;
-            this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addressLabel.Location = new System.Drawing.Point(206, 220);
-            this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(0, 20);
-            this.addressLabel.TabIndex = 39;
-            // 
-            // ageLabel
-            // 
-            this.ageLabel.AutoSize = true;
-            this.ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ageLabel.Location = new System.Drawing.Point(206, 189);
-            this.ageLabel.Name = "ageLabel";
-            this.ageLabel.Size = new System.Drawing.Size(0, 20);
-            this.ageLabel.TabIndex = 38;
-            // 
-            // bathroomsLabel
-            // 
-            this.bathroomsLabel.AutoSize = true;
-            this.bathroomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bathroomsLabel.Location = new System.Drawing.Point(574, 154);
-            this.bathroomsLabel.Name = "bathroomsLabel";
-            this.bathroomsLabel.Size = new System.Drawing.Size(0, 20);
-            this.bathroomsLabel.TabIndex = 41;
-            // 
-            // roomsLabel
-            // 
-            this.roomsLabel.AutoSize = true;
-            this.roomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roomsLabel.Location = new System.Drawing.Point(574, 123);
-            this.roomsLabel.Name = "roomsLabel";
-            this.roomsLabel.Size = new System.Drawing.Size(0, 20);
-            this.roomsLabel.TabIndex = 40;
-            // 
-            // priceLabel
-            // 
-            this.priceLabel.AutoSize = true;
-            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceLabel.Location = new System.Drawing.Point(574, 190);
-            this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(0, 20);
-            this.priceLabel.TabIndex = 42;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nameLabel.Location = new System.Drawing.Point(237, 60);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(0, 20);
-            this.nameLabel.TabIndex = 37;
-            // 
-            // surnameLabel
-            // 
-            this.surnameLabel.AutoSize = true;
-            this.surnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.surnameLabel.Location = new System.Drawing.Point(237, 112);
-            this.surnameLabel.Name = "surnameLabel";
-            this.surnameLabel.Size = new System.Drawing.Size(0, 20);
-            this.surnameLabel.TabIndex = 38;
-            // 
-            // dateOfBirthLabel
-            // 
-            this.dateOfBirthLabel.AutoSize = true;
-            this.dateOfBirthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateOfBirthLabel.Location = new System.Drawing.Point(237, 168);
-            this.dateOfBirthLabel.Name = "dateOfBirthLabel";
-            this.dateOfBirthLabel.Size = new System.Drawing.Size(0, 20);
-            this.dateOfBirthLabel.TabIndex = 39;
-            // 
-            // addressOwnerLabel
-            // 
-            this.addressOwnerLabel.AutoSize = true;
-            this.addressOwnerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addressOwnerLabel.Location = new System.Drawing.Point(237, 211);
-            this.addressOwnerLabel.Name = "addressOwnerLabel";
-            this.addressOwnerLabel.Size = new System.Drawing.Size(0, 20);
-            this.addressOwnerLabel.TabIndex = 40;
-            // 
-            // phoneNumberLabel
-            // 
-            this.phoneNumberLabel.AutoSize = true;
-            this.phoneNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.phoneNumberLabel.Location = new System.Drawing.Point(921, 60);
-            this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(0, 20);
-            this.phoneNumberLabel.TabIndex = 41;
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.emailLabel.Location = new System.Drawing.Point(921, 112);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(0, 20);
-            this.emailLabel.TabIndex = 42;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -623,6 +613,17 @@ namespace ITPoland_Project_5
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ITPoland_Project_5.Properties.Resources.imageNotAvailable;
+            this.pictureBox1.Location = new System.Drawing.Point(734, 123);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 355);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form3
             // 
@@ -645,9 +646,9 @@ namespace ITPoland_Project_5
             this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

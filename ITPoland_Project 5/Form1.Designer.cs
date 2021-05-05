@@ -69,6 +69,7 @@ namespace ITPoland_Project_5
             this.searchButton.TabIndex = 5;
             this.searchButton.Text = "Search Properties";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // addButton
             // 

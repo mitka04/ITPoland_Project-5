@@ -149,5 +149,10 @@ namespace ITPoland_Project_5
             checkBox11.Enabled = false;
             checkBox12.Enabled = false;
         }
+
+        private void currentContactLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
