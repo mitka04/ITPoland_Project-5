@@ -80,7 +80,7 @@ namespace ITPoland_Project_5
             checkBox12.Checked = ListProperties.properties[currentDataFromList].checkBox12;
             nameLabel.Text = ListProperties.properties[currentDataFromList].name;
             surnameLabel.Text = ListProperties.properties[currentDataFromList].surname;
-            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth + "";
+            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth;
             addressOwnerLabel.Text = ListProperties.properties[currentDataFromList].addressOwner;
             phoneNumberLabel.Text = ListProperties.properties[currentDataFromList].phoneNumber + "";
             emailLabel.Text = ListProperties.properties[currentDataFromList].email;       
@@ -126,7 +126,7 @@ namespace ITPoland_Project_5
             checkBox12.Checked = ListProperties.properties[currentDataFromList].checkBox12;
             nameLabel.Text = ListProperties.properties[currentDataFromList].name;
             surnameLabel.Text = ListProperties.properties[currentDataFromList].surname;
-            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth + "";
+            dateOfBirthLabel.Text = ListProperties.properties[currentDataFromList].dateOfBirth;
             addressOwnerLabel.Text = ListProperties.properties[currentDataFromList].addressOwner;
             phoneNumberLabel.Text = ListProperties.properties[currentDataFromList].phoneNumber + "";
             emailLabel.Text = ListProperties.properties[currentDataFromList].email;

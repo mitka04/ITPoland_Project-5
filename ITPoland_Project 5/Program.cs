@@ -36,7 +36,7 @@ namespace ITPoland_Project_5
             Boolean checkBox12;
             string name;
             string surname;
-            int dateOfBirth;
+            string dateOfBirth;
             string addressOwner;
             long phoneNumber;
             string email;
@@ -66,7 +66,7 @@ namespace ITPoland_Project_5
                 checkBox12 = Convert.ToBoolean(sr.ReadLine());
                 name = sr.ReadLine();
                 surname = sr.ReadLine();
-                dateOfBirth = Convert.ToInt32(sr.ReadLine());
+                dateOfBirth = sr.ReadLine();
                 addressOwner = sr.ReadLine();
                 phoneNumber = Convert.ToInt64(sr.ReadLine());
                 email = sr.ReadLine();

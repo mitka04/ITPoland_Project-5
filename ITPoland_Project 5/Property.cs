@@ -29,7 +29,7 @@ namespace ITPoland_Project_5
         public Boolean checkBox12;
         public string name;
         public string surname;
-        public int dateOfBirth;
+        public string dateOfBirth;
         public string addressOwner;
         public long phoneNumber;
         public string email;
@@ -38,7 +38,7 @@ namespace ITPoland_Project_5
         public Property(int size, int floor, int age, string address, int rooms, int bathrooms, int price, Boolean checkBox1,
             Boolean checkBox2, Boolean checkBox3, Boolean checkBox4, Boolean checkBox5, Boolean checkBox6, Boolean checkBox7,
             Boolean checkBox8, Boolean checkBox9, Boolean checkBox10, Boolean checkBox11, Boolean checkBox12, string name,
-            string surname, int dateOfBirth, string addressOwner, long phoneNumber, string email, string pathImage)
+            string surname, string dateOfBirth, string addressOwner, long phoneNumber, string email, string pathImage)
         {
             this.size = size;
             this.floor = floor;

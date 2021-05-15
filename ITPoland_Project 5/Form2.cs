@@ -36,7 +36,7 @@ namespace ITPoland_Project_5
         Boolean optionCheckBox12;
         string name;
         string surname;
-        int dateOfBirth;
+        string dateOfBirth;
         string addressOwner;
         long phoneNumber;
         string email;
@@ -142,7 +142,7 @@ namespace ITPoland_Project_5
                 }
                 if (textBox10.Text != "")
                 {
-                    dateOfBirth = Convert.ToInt32(textBox10.Text);
+                    dateOfBirth = textBox10.Text;
                 }
                 if (textBox11.Text != "")
                 {

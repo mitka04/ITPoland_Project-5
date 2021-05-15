@@ -65,7 +65,7 @@ namespace ITPoland_Project_5
                 form3.checkBox12.Checked = ListProperties.properties[0].checkBox12;
                 form3.nameLabel.Text = ListProperties.properties[0].name;
                 form3.surnameLabel.Text = ListProperties.properties[0].surname;
-                form3.dateOfBirthLabel.Text = ListProperties.properties[0].dateOfBirth + "";
+                form3.dateOfBirthLabel.Text = ListProperties.properties[0].dateOfBirth;
                 form3.addressOwnerLabel.Text = ListProperties.properties[0].addressOwner;
                 form3.phoneNumberLabel.Text = ListProperties.properties[0].phoneNumber + "";
                 form3.emailLabel.Text = ListProperties.properties[0].email;
@@ -101,7 +101,7 @@ namespace ITPoland_Project_5
                 form3.checkBox12.Checked = ListProperties.properties[0].checkBox12;
                 form3.nameLabel.Text = ListProperties.properties[0].name;
                 form3.surnameLabel.Text = ListProperties.properties[0].surname;
-                form3.dateOfBirthLabel.Text = ListProperties.properties[0].dateOfBirth + "";
+                form3.dateOfBirthLabel.Text = ListProperties.properties[0].dateOfBirth;
                 form3.addressOwnerLabel.Text = ListProperties.properties[0].addressOwner;
                 form3.phoneNumberLabel.Text = ListProperties.properties[0].phoneNumber + "";
                 form3.emailLabel.Text = ListProperties.properties[0].email;

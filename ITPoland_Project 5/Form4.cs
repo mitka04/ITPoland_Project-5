@@ -79,21 +79,23 @@ namespace ITPoland_Project_5
         private void searchButton_Click(object sender, EventArgs e)
         {
             SearchProperty.searchProperties.Clear();
-            // Checking the price radioButton
-            if (priceButton.Checked)
-            {
-                for (int i = 0; i < ListProperties.properties.Count; i++)
+                // Checking the price radioButton
+                if (priceButton.Checked)
                 {
-                    int price = ListProperties.properties[i].price;
-                    if (price1.Text != "" && price2.Text != "") {
+                 currentData = 1;
+                 currentDataFromList = 0;
+                if (price1.Text == "" && price2.Text == "")
+                    {
+                        MessageBox.Show("Please enter price information!");
+                }
+                else { 
+                    for (int i = 0; i < ListProperties.properties.Count; i++)
+                    {
+                        int price = ListProperties.properties[i].price;
                         if (price >= Convert.ToInt32(price1.Text) && price <= Convert.ToInt32(price2.Text))
                         {
                             SearchProperty.searchProperties.Add(ListProperties.properties[i]);
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please enter price information!");
                     }
                 }
                 enableGroupBoxes();
@@ -125,7 +127,7 @@ namespace ITPoland_Project_5
                     checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
                     nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
                     surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
                     addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
                     phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
                     emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
@@ -135,6 +137,7 @@ namespace ITPoland_Project_5
                 else if (numberOfData > 1)
                 {
                     previouseRecordButton.Enabled = false;
+                    nextRecordButton.Enabled = true;
                     currentDataLabel.Text = currentData + "";
                     sizeLabel.Text = SearchProperty.searchProperties[currentDataFromList].size + "";
                     floorLabel.Text = SearchProperty.searchProperties[currentDataFromList].floor + "";
@@ -157,7 +160,7 @@ namespace ITPoland_Project_5
                     checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
                     nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
                     surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
                     addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
                     phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
                     emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
@@ -201,18 +204,21 @@ namespace ITPoland_Project_5
             // Checking the rooms radioButton 
             if (roomsButton.Checked)
             {
-                for (int i = 0; i < ListProperties.properties.Count; i++)
+                currentData = 1;
+                currentDataFromList = 0;
+                if (rooms.Text == "")
                 {
-                    int roomsNumber = ListProperties.properties[i].rooms;
-                    if (rooms.Text != "") {
+                    MessageBox.Show("Please enter the rooms information!");
+                }
+                else
+                {
+                    for (int i = 0; i < ListProperties.properties.Count; i++)
+                    {
+                        int roomsNumber = ListProperties.properties[i].rooms;
                         if (roomsNumber == Convert.ToInt32(rooms.Text))
                         {
                             SearchProperty.searchProperties.Add(ListProperties.properties[i]);
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please enter the rooms information!");
                     }
                 }
                 enableGroupBoxes();
@@ -244,7 +250,7 @@ namespace ITPoland_Project_5
                     checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
                     nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
                     surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
                     addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
                     phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
                     emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
@@ -254,6 +260,7 @@ namespace ITPoland_Project_5
                 else if (numberOfData > 1)
                 {
                     previouseRecordButton.Enabled = false;
+                    nextRecordButton.Enabled = true;
                     currentDataLabel.Text = currentData + "";
                     sizeLabel.Text = SearchProperty.searchProperties[currentDataFromList].size + "";
                     floorLabel.Text = SearchProperty.searchProperties[currentDataFromList].floor + "";
@@ -276,7 +283,7 @@ namespace ITPoland_Project_5
                     checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
                     nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
                     surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+                    dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
                     addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
                     phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
                     emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
@@ -360,7 +367,7 @@ namespace ITPoland_Project_5
             checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
             nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
             surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-            dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+            dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
             addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
             phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
             emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
@@ -405,7 +412,7 @@ namespace ITPoland_Project_5
             checkBox12.Checked = SearchProperty.searchProperties[currentDataFromList].checkBox12;
             nameLabel.Text = SearchProperty.searchProperties[currentDataFromList].name;
             surnameLabel.Text = SearchProperty.searchProperties[currentDataFromList].surname;
-            dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth + "";
+            dateOfBirthLabel.Text = SearchProperty.searchProperties[currentDataFromList].dateOfBirth;
             addressOwnerLabel.Text = SearchProperty.searchProperties[currentDataFromList].addressOwner;
             phoneNumberLabel.Text = SearchProperty.searchProperties[currentDataFromList].phoneNumber + "";
             emailLabel.Text = SearchProperty.searchProperties[currentDataFromList].email;
